@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <style>
+        .footer {
+  position: fixed;
+  left:
+  0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+    </style>
+    <link rel="icon"
+        href="data:image/png;base64,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">
+    <title>Population Prediction</title>
+</head>
+
+<body>
+<div class="container">
+<br>
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+                <h3>{{ message }}</h3>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <br>
+    </div>
+<br>
+<center class="container">
+    <h1><b>Predicting the Population of a Country <br> </b></h1>
+    <br>
+    <h4><b>*There is only 210 countries to choose from.* *The predictions may change*</b></h4>
+
+  </center>
+<br><br>
+    <center>
+        <div class="container">
+            <img src="https://jonmgomes.com/wp-content/uploads/2020/05/Comp_1.gif"
+                 alt="https://jonmgomes.com/wp-content/uploads/2020/05/Comp_1.gif" width="250" height="125"></div>
+    </center>
+    <br>
+    <div class="container">
+        <div class="jumbotron">
+            <form method="post">
+                <div class="mb-3">
+    <label for="year" class="form-label">Year</label>
+    <input type="date" required name="D" class="form-control" id="year">
+  </div>
+                <select name="C" required class="form-select">
+  <option selected>Country</option>
+                    {% for country in countries %}
+  <option value="{{country}}">{{country}}</option>
+{% endfor %}
+</select>
+                <br>
+                 <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+        </div>
+    </div>
+<br><br><br><br><br><br><br>
+<div class="footer">
+    <h3><b>
+        Copyright © 2021 RanugaD
+    </b></h3>
+</div>
+</body>
+
+</html>
